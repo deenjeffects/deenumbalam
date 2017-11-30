@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+<body>
+
+<div> 
+<h2>Hai</h2>
+<select id="id01">
+  <option w3-repeat="rows">{{name}}</option>
+</select>
+
+<script>
+
+w3.getHttpObject("http://gsx2json.com/api?id=1IHF0mSHs1HdYpIlIzYKG3O8SnAhKU_a6nEJSz04Togk", myFunction);
+
+function myFunction(myObject) {
+  w3.displayObject("id01", myObject);
+}
+
+w3.includeHTML()
+</script>
+</div>
+
+
+</body>
+</html>
